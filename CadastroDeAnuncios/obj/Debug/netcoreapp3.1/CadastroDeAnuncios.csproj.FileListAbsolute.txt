@@ -1,0 +1,13 @@
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\obj\Debug\netcoreapp3.1\CadastroDeAnuncios.csprojAssemblyReference.cache
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\obj\Debug\netcoreapp3.1\CadastroDeAnuncios.AssemblyInfoInputs.cache
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\obj\Debug\netcoreapp3.1\CadastroDeAnuncios.AssemblyInfo.cs
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\obj\Debug\netcoreapp3.1\CadastroDeAnuncios.csproj.CoreCompileInputs.cache
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\bin\Debug\netcoreapp3.1\CadastroDeAnuncios.exe
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\bin\Debug\netcoreapp3.1\CadastroDeAnuncios.deps.json
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\bin\Debug\netcoreapp3.1\CadastroDeAnuncios.runtimeconfig.json
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\bin\Debug\netcoreapp3.1\CadastroDeAnuncios.runtimeconfig.dev.json
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\bin\Debug\netcoreapp3.1\CadastroDeAnuncios.dll
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\bin\Debug\netcoreapp3.1\CadastroDeAnuncios.pdb
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\obj\Debug\netcoreapp3.1\CadastroDeAnuncios.dll
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\obj\Debug\netcoreapp3.1\CadastroDeAnuncios.pdb
+C:\Users\Computador NZXT\source\repos\CadastroDeAnuncios\CadastroDeAnuncios\obj\Debug\netcoreapp3.1\CadastroDeAnuncios.genruntimeconfig.cache
