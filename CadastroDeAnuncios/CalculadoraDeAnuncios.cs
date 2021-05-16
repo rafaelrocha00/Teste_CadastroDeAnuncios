@@ -5,6 +5,9 @@ namespace CadastroDeAnuncios
     public class CalculadoraDeAnuncios
     {
         public float dinheiroInvestido { get; private set; }
+        public int clicksTotais { get; private set; }
+        public int compartilhamentosTotais { get; private set; }
+
         const int visualizacoesPorReal = 30;
         const int maximoDeCompartilhamento = 4;
         const int VisualizacoesPorCompartilhamento = 40;
@@ -21,14 +24,17 @@ namespace CadastroDeAnuncios
         /// Retorna uma aproximação de visualizações máxima baseado no dinheiro investido.
         /// </summary>
         /// <returns></returns>
-        public float ProjetarVisualizacoesGanhasAteAgora()
+        public int ProjetarVisualizacoesGanhasAteAgora()
         {
             int visualizacoesIniciais = CalcularVisualizacoesIniciais();
             int visualizacoesPosteriores = CompartilhamentosToVisualizacoes(visualizacoesIniciais);
             for (int i = 0; i < maximoDeCompartilhamento - 1; i++)
             {
                 visualizacoesIniciais += visualizacoesPosteriores;
-                visualizacoesPosteriores = CompartilhamentosToVisualizacoes(visualizacoesPosteriores);
+                if(i < maximoDeCompartilhamento - 2)
+                {
+                    visualizacoesPosteriores = CompartilhamentosToVisualizacoes(visualizacoesPosteriores);
+                }
             }
             return visualizacoesIniciais;
         }
@@ -41,7 +47,9 @@ namespace CadastroDeAnuncios
         int CompartilhamentosToVisualizacoes(int visualizacoes)
         {
             int clicks = CalcularClicks(visualizacoes);
+            clicksTotais += clicks;
             int compartilhamentos = CalcularCompartilhamentos(clicks);
+            compartilhamentosTotais += compartilhamentos;
             return compartilhamentos * VisualizacoesPorCompartilhamento;
         }
 

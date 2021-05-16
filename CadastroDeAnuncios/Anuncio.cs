@@ -33,8 +33,9 @@ namespace CadastroDeAnuncios
         /// <returns></returns>
         public string FornecerRelatorio()
         {
-            float views = GetViewsAteAgora();
-            return "# Nome: " + nome + " | Cliente: " + cliente + " | Investimento diario: " + investimentoPorDia.ToString() + " | Visualizações até agora: " + views;
+            Relatorio relatorio = FornecerInformacoesRelatorio();
+            return "# Nome: " + nome + " | Dinheiro investido: " + relatorio.investimentoTotal + " | Visualizações: " + relatorio.visualizacoesTotais + 
+                   " | Clicks: " + relatorio.clicksTotais + " | Compartilhamentos: " + relatorio.CompartilhamentoTotal;
         }
 
         TimeSpan FornecerTempoPassado(DateTime dia)
@@ -67,11 +68,15 @@ namespace CadastroDeAnuncios
         /// Retorna as visualizações aproximadas da data de inicio até agora.
         /// </summary>
         /// <returns></returns>
-        public float GetViewsAteAgora()
+        public Relatorio FornecerInformacoesRelatorio()
         {
             CalculadoraDeAnuncios calculadora = new CalculadoraDeAnuncios();
-            calculadora.Investir(GetInvestimentoTotalAteAgora());
-            return calculadora.ProjetarVisualizacoesGanhasAteAgora();
+            float investimentoTotal = GetInvestimentoTotalAteAgora();
+            calculadora.Investir(investimentoTotal);
+            int visualizacoes = calculadora.ProjetarVisualizacoesGanhasAteAgora();
+            int compartilhamentoTotal = calculadora.compartilhamentosTotais;
+            int clicksTotais = calculadora.clicksTotais;
+            return new Relatorio(visualizacoes, clicksTotais, investimentoTotal, compartilhamentoTotal);
         }
 
         /// <summary>
